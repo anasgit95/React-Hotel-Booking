@@ -14,6 +14,7 @@ import BallRotate from 'react-loader-spinner'
 class Periode extends Component {
     constructor(props) {
         super(props);
+        this.handler = this.handler.bind(this);
 
         this.state = {
 
@@ -25,6 +26,9 @@ class Periode extends Component {
         }
 
 
+    }
+    handler() {
+        alert("je suis le pere ");
     }
     handleClick = () => {
 
@@ -71,7 +75,11 @@ class Periode extends Component {
                 div >
                 :
                     <
-                    Timer / >
+                    Timer
+                action = {
+                    this.handler
+                }
+                / >
 
 
 

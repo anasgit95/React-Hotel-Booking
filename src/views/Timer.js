@@ -89,7 +89,7 @@ class Timer extends Component {
             loading: true,
             minutes: 0,
             seconds: 1,
-            show: true,
+            show: false,
             Statistique: true,
         }
     }
@@ -203,7 +203,7 @@ class Timer extends Component {
                 }
                 / >   <
                 Button onClick = {
-                    DataIsHere
+                    this.props.action
                 } > Rechercher < /Button>    < /
                 div >
             } {

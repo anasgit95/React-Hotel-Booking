@@ -19,24 +19,14 @@ class Agence extends Component {
             data: [],
             Show: false,
             ShowStatistique: false,
-            date1: "2019-10-20",
-            date2: "2019-10-20",
-            periode: "1",
 
+            periode: "1",
+            someVar: '',
 
         }
 
     }
 
-    handleClick = () => {
-
-        this.setState({
-            Show: true,
-            ShowStatistique: false,
-            loading: true,
-
-        })
-    }
     handleeChange(e) {
         this.setState({
             [e.target.name]: e.target.value
@@ -45,21 +35,8 @@ class Agence extends Component {
 
     }
 
-    handleClick1 = () => {
-        ;
-        this.setState({
-            selected: [],
-
-            data: ['5', '17', '18', '30', '17', '18', '30'],
-            ShowStatistique: true,
-            Show: false,
-        })
-    }
     render() {
 
-        const {
-            selectedOption
-        } = this.state;
 
 
 
@@ -91,11 +68,21 @@ class Agence extends Component {
                 <
                 div className = "PeriodePos1" >
                 <
-                Periode / >
+                Periode /
+                >
                 <
-                div className = "PeriodePost2" >
+                /
+                div > <
+                div className = "PeriodePos2" > {
+                    this.state.ShowStatistique ?
+                    <
+                    Statistique / >
+                    :
+                        null
+                }
+
                 <
-                /div> < /
+                /
                 div > < /
                 div > <
                 /
@@ -109,11 +96,13 @@ class Agence extends Component {
                     <
                     div className = "DottedBox1" >
                     <
-                    Timer secondes = {
-                        [
-                            (this.state.periode * 10) / 60, (this.state.periode * 2) % 60
-                        ]
-                    }
+                    Timer
+
+                secondes = {
+                    [
+                        (this.state.periode * 10) / 60, (this.state.periode * 2) % 60
+                    ]
+                }
                 / > < /
                 div >
                     : null

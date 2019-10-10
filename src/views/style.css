@@ -1,0 +1,211 @@
+.DottedBox {
+    margin-top: 4%;
+    margin-left: 6%;
+    width: 1200px;
+    height: 700px;
+    border-radius: 3%;
+    font-weight: Bold;
+    background-color: white;
+    font-style: oblique;
+
+}
+
+.HotelSearch Img {
+    width: 20%;
+    height: 30%;
+    margin-left: 220px;
+    font-style: oblique;
+
+}
+
+
+.PeriodePos1 {
+    padding-top: 5%;
+    float: left;
+    width: 30%;
+    background-color: white;
+    width: 50%;
+    border-radius: 4%;
+    height: 520px;
+    margin-left: 5%;
+    font-style: oblique;
+
+    margin-top: 5%;
+
+
+
+
+}
+
+.Paneau1 {
+    margin-top: 5%;
+    float: left;
+    margin-left: 10%;
+    width: 35%;
+    height: 80%;
+    border-radius: 25px;
+    font-style: oblique;
+
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.Paneau2 {
+    margin-top: 5%;
+
+    float: left;
+    margin-left: 10%;
+    background: rgba(0, 0, 0, 0.5);
+
+    width: 35%;
+    font-style: oblique;
+
+    height: 80%;
+    border-radius: 25px;
+}
+
+.SecondeBlack {
+    width: 100%;
+    height: 50%;
+    font-style: oblique;
+
+    ;
+}
+
+.FirstBlack {
+    width: 100%;
+    height: 50%;
+    font-style: oblique;
+
+    ;
+}
+
+.Periode {
+    margin-left: 3%;
+}
+
+.PeriodePos2 p {
+    margin-top: 10px;
+    color: white;
+    margin-left: 30px;
+    font-weight: Bold;
+    font-style: oblique;
+
+    font-size: 15px;
+
+}
+
+.PeriodePos2 img {
+    width: 110px;
+    height: 110px;
+    font-style: oblique;
+
+    margin-left: 35px;
+    margin-top: 15px;
+
+}
+
+.PeriodePos2 {
+
+    height: 500px;
+    margin-top: 5%;
+    float: left;
+    font-style: oblique;
+
+    width: 45%;
+
+}
+
+.Calender1 {
+    float: left;
+}
+
+.Periode Button {
+    margin-left: 25%;
+}
+
+.Agence {
+    height: 90%;
+    background-image: url("../background1.jpg");
+    border-bottom-left-radius: 50px 20px;
+    border-bottom-right-radius: 50px 20px;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+.DottedBox input {
+    margin-left: 15px;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-style: oblique;
+
+}
+
+.headDash {
+    padding-top: 1%;
+    height: 50px;
+    border-bottom: inset;
+    font-style: oblique;
+
+}
+
+.headDash li {
+    display: inline;
+    margin-left: 2%;
+
+}
+
+.Main {
+    width: 95%;
+    margin-left: 30px;
+
+}
+
+.DottedBox Button {
+    width: 300px;
+    font-weight: Bold;
+    box-shadow: 0 3px 60px 0 rgb(135, 206, 235);
+    font-style: oblique;
+    font-style: oblique;
+
+
+
+
+}
+
+.DottedBox1 {
+    height: 700px;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-style: inset;
+    font-weight: Bold;
+    box-shadow: 0 3px 60px 0 rgb(135, 206, 235);
+    border-color: #87CEFA;
+    font-style: oblique;
+
+
+}
+
+Button {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-style: oblique;
+
+}
+
+.Anas {
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 15px;
+    font-style: oblique;
+
+}
+
+img {
+    width: 40px;
+    height: 30px;
+}

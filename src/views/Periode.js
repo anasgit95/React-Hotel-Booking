@@ -7,8 +7,6 @@ import BasicConcepts from "./BasicConcepts"
 import {
     Button
 } from 'react-bootstrap';
-import Timer from './Timer';
-import BallRotate from 'react-loader-spinner'
 
 
 class Periode extends Component {
@@ -65,7 +63,7 @@ class Periode extends Component {
 
                 <
                 Button onClick = {
-                    this.handleClick
+                    this.props.action
                 } > Rechercher < /Button>  
 
 
@@ -74,12 +72,9 @@ class Periode extends Component {
                 /
                 div >
                 :
-                    <
-                    Timer
-                action = {
-                    this.handler
-                }
-                / >
+                    null
+
+
 
 
 

@@ -12,14 +12,16 @@ import Statistique from './Statistique';
 class Agence extends Component {
     constructor(props) {
         super(props);
-
+        this.handler = this.handler.bind(this);
+        this.handlerPeriod = this.handlerPeriod.bind(this);
         this.state = {
             selectedOption: null,
             loading: false,
             data: [],
             Show: false,
             ShowStatistique: false,
-
+            ShowPeriod: true,
+            ShowTimer: false,
             periode: "1",
             someVar: '',
 
@@ -33,6 +35,19 @@ class Agence extends Component {
         });
 
 
+    }
+    handler() {
+        this.setState({
+
+            ShowStatistique: true
+        });
+    }
+
+    handlerPeriod() {
+        this.setState({
+            ShowTimer: true,
+            ShowPeriod: false
+        });
     }
 
     render() {
@@ -66,11 +81,22 @@ class Agence extends Component {
                 /div> <
                 div className = "Agence" >
                 <
-                div className = "PeriodePos1" >
-                <
-                Periode /
-                >
-                <
+                div className = "PeriodePos1" > {
+                    this.state.ShowPeriod ?
+                    <
+                    Periode action = {
+                        this.handlerPeriod
+                    }
+                    / > :
+                    null
+                } {
+                    this.state.ShowTimer ?
+                        <
+                        Timer action = {
+                            this.handler
+                        }
+                    />: null
+                } <
                 /
                 div > <
                 div className = "PeriodePos2" > {
@@ -78,7 +104,46 @@ class Agence extends Component {
                     <
                     Statistique / >
                     :
-                        null
+                        <
+                        div >
+                        <
+                        div className = "FirstBlack" >
+                        <
+                        div className = "Paneau1" >
+                        <
+                        img src = "./images/flight2.png" / >
+                        <
+                        p > flight reservation < /p>  < /
+                    div > <
+                    div className = "Paneau2" >
+                    <
+                    img src = "./images/hotel.png" / >
+                    <
+                    p > hotel reservation < /p>   < /
+                    div >
+
+
+                    <
+                    /div>  <
+                    div className = "SecondeBlack" >
+                    <
+                    div className = "Paneau1" >
+                    <
+                    img src = "./images/metro.png" / >
+                    <
+                    p > buy your ticket < /p>  < /
+                    div > <
+                    div className = "Paneau2" >
+                    <
+                    img src = "./images/Anas.png" / >
+                    <
+                    p > Call
+                    for information < /p>   < /
+                    div >
+
+                    <
+                    /div> < /
+                    div >
                 }
 
                 <
@@ -106,16 +171,7 @@ class Agence extends Component {
                 / > < /
                 div >
                     : null
-            } {
-                this.state.ShowStatistique ?
-                    <
-                    Statistique data = {
-                        this.state.data
-                    }
-                / >:
-                null
             }
-
 
 
 

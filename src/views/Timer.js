@@ -158,11 +158,11 @@ class Timer extends Component {
                 BallRotate type = "Puff"
                 color = "blue"
                 height = {
-                    300
+                    350
                 }
                 width = {
 
-                    500
+                    600
                 }
                 timeout = {
                     1230000
@@ -202,7 +202,13 @@ class Timer extends Component {
                     options
                 }
                 / >   <
-                Button onClick = {
+                Button style = {
+                    {
+
+                        marginLeft: "150px"
+                    }
+                }
+                onClick = {
                     this.props.action
                 } > Rechercher < /Button>    < /
                 div >
